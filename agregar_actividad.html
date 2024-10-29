@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Actividad</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Agregar Actividad</h1>
+        <form action="agregar_actividad.php" method="POST">
+            <label for="descripcion">Descripción:</label>
+            <input type="text" id="descripcion" name="descripcion" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <button type="submit">Agregar Actividad</button>
+        </form>
+
+        <a href="empleado_menu.html" class="back-button">Volver al Menú</a>
+    </div>
+
+</body>
+</html>

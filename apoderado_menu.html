@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Apoderado</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Menú de Apoderado</h1>
+        <p>Bienvenido, aquí puedes ver las observaciones de tu(s) hijo(s).</p>
+
+        <form action="ver_observaciones.php" method="POST">
+            <label for="id_alumno">Seleccione el alumno:</label>
+            <select id="id_alumno" name="id_alumno" required>
+                <!-- Aquí se llenarán las opciones de alumnos asociados al apoderado desde la base de datos -->
+                <option value="1">Juan Pérez</option>
+                <option value="2">María González</option>
+            </select>
+            <button type="submit">Ver Observaciones</button>
+        </form>
+
+        <a href="Inicio_sesion.html" class="back-button">Cerrar Sesión</a>
+    </div>
+
+</body>
+</html>

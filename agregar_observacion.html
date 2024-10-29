@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Observación</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Agregar Observación</h1>
+        <form action="agregar_observacion.php" method="POST">
+            <label for="id_alumno">Seleccione el alumno:</label>
+            <select id="id_alumno" name="id_alumno" required>
+                <!-- Aquí se llenarán las opciones de alumnos desde la base de datos -->
+                <option value="1">Juan Pérez</option>
+                <option value="2">María González</option>
+            </select>
+
+            <label for="detalle">Observación:</label>
+            <textarea id="detalle" name="detalle" required></textarea>
+
+            <input type="hidden" name="id_empleado" value="<!-- Aquí va el ID del empleado logueado -->">
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <button type="submit">Agregar Observación</button>
+        </form>
+
+        <a href="empleado_menu.html" class="back-button">Volver al Menú</a>
+    </div>
+
+</body>
+</html>

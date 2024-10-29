@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Empleado</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registrar Empleado</h1>
+        <form action="registro_empleado.php" method="POST">
+            <label for="nombreEmpleado">Nombre:</label>
+            <input type="text" id="nombreEmpleado" name="nombreEmpleado" required>
+
+            <label for="emailEmpleado">Email:</label>
+            <input type="email" id="emailEmpleado" name="emailEmpleado" required>
+
+            <label for="cargoEmpleado">Cargo:</label>
+            <select id="cargoEmpleado" name="cargoEmpleado" required>
+                <option value="" disabled selected>Seleccione un cargo</option>
+                <option value="Docente">Docente</option>
+                <option value="Asistente">Asistente</option>
+                <option value="Administrativo">Administrativo</option>
+                <option value="Aseo">Personal de Aseo</option>
+                <option value="Director">Director</option>
+            </select>
+
+            <button type="submit">Registrar Empleado</button>
+        </form>
+	<a href="admin_menu.html" class="back-button">Volver al Menú</a>
+    </div>
+
+</body>
+</html>

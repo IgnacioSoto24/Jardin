@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Alumno</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registrar Alumno</h1>
+        <form action="registro_alumno.php" method="POST">
+            <label for="nombreAlumno">Nombre:</label>
+            <input type="text" id="nombreAlumno" name="nombreAlumno" required>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <label for="nivelEducacion">Nivel de Educación:</label>
+            <select id="nivelEducacion" name="nivelEducacion" required>
+                <option value="" disabled selected>Seleccione el nivel</option>
+                <option value="Sala Cuna">Sala Cuna</option>
+                <option value="Nivel Medio">Nivel Medio</option>
+                <option value="Pre-Kínder">Pre-Kínder</option>
+                <option value="Kínder">Kínder</option>
+            </select>
+
+            <button type="submit">Registrar Alumno</button>
+        </form>
+	<a href="admin_menu.html" class="back-button">Volver al Menú</a>
+    </div>
+
+</body>
+</html>
